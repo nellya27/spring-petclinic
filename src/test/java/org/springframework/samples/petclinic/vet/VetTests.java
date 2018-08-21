@@ -30,7 +30,7 @@ public class VetTests {
     @Test
     public void testSerialization() {
         Vet vet = new Vet();
-        vet.setFirstName("Zaphod");
+        vet.setFirstName("Zaphod1");
         vet.setLastName("Beeblebrox");
         vet.setId(123);
         Vet other = (Vet) SerializationUtils
