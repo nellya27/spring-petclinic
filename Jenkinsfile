@@ -4,6 +4,7 @@ pipeline{
         stage('Checkout'){
          steps{
              git 'https://github.com/nellya27/spring-petclinic.git'
+              }
          }
         stage('Build'){
             steps{
@@ -11,6 +12,6 @@ pipeline{
                 junit '**/target/surefire-reports/TEST-*.xml'
             }
         }
-        }
+      }
     }
 }
