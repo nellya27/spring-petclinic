@@ -5,7 +5,7 @@ pipeline{
          steps{
              git 'https://github.com/nellya27/spring-petclinic.git'
               }
-         }
+        }
         stage('Build'){
             steps{
                 sh 'mvn clean package'
@@ -13,5 +13,5 @@ pipeline{
             }
         }
       }
-    }
-}
+   }
+
