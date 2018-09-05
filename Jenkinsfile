@@ -18,7 +18,7 @@ pipeline{
         stage('Deploy'){
             steps{
                input 'Do you approve the deployment?'
-               sh 'scp target/*jar ec2-user@52.208.45.208:/opt/pet'
+               sh 'scp target/*.jar ec2-user@52.208.45.208:/opt/pet'
                sh "ssh ec2-user@52.208.45.208 'nohup java -jar /opt/pet/sprint-petclinic-2.0.0.jar'" 
             }
         }
